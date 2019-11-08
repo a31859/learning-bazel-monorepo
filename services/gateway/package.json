@@ -1,0 +1,22 @@
+{
+  "name": "@lbm/gateway",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:dev": "nodemon --ext ts --watch src --exec \"yarn start\" --ignore src/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@lbm/enums": "0.0.0",
+    "@lbm/utils": "0.0.0",
+    "express": "^4.17.1"
+  }
+}

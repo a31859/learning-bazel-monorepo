@@ -1,0 +1,40 @@
+{
+  "name": "lbm",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "private": true,
+  "scripts": {
+    "fire": "yarn install && yarn build",
+    "refire": "yarn clean && yarn fire",
+    "start:dev": "npm-run-all --parallel build:watch start:docker:dev start:frontend",
+    "start:dev:up": "npm-run-all --parallel build:watch start:docker:dev:up start:frontend",
+    "test": "lerna run test",
+    "start": "yarn start:docker",
+    "release": "lerna version",
+    "---": "---",
+    "start:frontend": "lerna exec --scope frontend -- yarn start",
+    "clean": "lerna run clean && rimraf node_modules",
+    "build": "tsc --build",
+    "build:watch": "tsc --build --watch",
+    "tsc": "tsc",
+    "start:docker:dev": "docker-compose -f docker-compose.dev.yaml up --build --no-color 2>&1 | sed 's/^[^ ]*  *| //'",
+    "start:docker:dev:up": "docker-compose -f docker-compose.dev.yaml up --no-color 2>&1 | sed 's/^[^ ]*  *| //'",
+    "start:docker": "docker-compose -f docker-compose.prod.yaml up --build"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.2"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 120,
+    "bracketSpacing": true
+  }
+}
