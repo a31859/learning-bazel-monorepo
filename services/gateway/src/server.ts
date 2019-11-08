@@ -6,6 +6,8 @@ import { selectRandomArrayItem } from '@lbm/utils';
 export const start = () => {
   const app = express();
 
+  app.get('/alive', (req, res) => res.send('alive'));
+
   app.get('**', (req, res) => {
     const people: string[] = [People.DeMarco, People.Sonmez, People.Hof];
     const randomPerson: string = selectRandomArrayItem(people);

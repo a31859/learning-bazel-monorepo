@@ -3,6 +3,6 @@ services:
   gateway:
     build:
       context: ./
-      dockerfile: ./services/gateway/Dockerfile
+      dockerfile: ./services/gateway/prod.Dockerfile
     ports:
       - 3000:3000

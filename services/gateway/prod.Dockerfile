@@ -8,4 +8,4 @@ RUN yarn install
 COPY ./tsconfig.settings.json ./
 COPY ./tsconfig.json ./
 WORKDIR /usr/app/src/services/gateway
-CMD [ yarn start ]
+CMD yarn start
