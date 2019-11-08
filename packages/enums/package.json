@@ -1,0 +1,7 @@
+{
+  "name": "@lbm/enums",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true
+}
