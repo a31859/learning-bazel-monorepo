@@ -1,7 +1,7 @@
 import * as express from 'express';
 
-import { People } from '@lbm/enums';
-import { selectRandomArrayItem } from '@lbm/utils';
+import { People } from '@learning-bazel-monorepo/enums';
+import { selectRandomArrayItem } from '@learning-bazel-monorepo/utils';
 
 export const start = () => {
   const app = express();

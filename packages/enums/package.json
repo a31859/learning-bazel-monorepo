@@ -1,5 +1,5 @@
 {
-  "name": "@lbm/enums",
+  "name": "@learning-bazel-monorepo/enums",
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",

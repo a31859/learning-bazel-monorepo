@@ -1,5 +1,5 @@
 {
-  "name": "@lbm/gateway",
+  "name": "@learning-bazel-monorepo/gateway",
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@lbm/enums": "0.0.0",
-    "@lbm/utils": "0.0.0",
+    "@learning-bazel-monorepo/enums": "0.0.0",
+    "@learning-bazel-monorepo/utils": "0.0.0",
     "express": "^4.17.1"
   }
 }

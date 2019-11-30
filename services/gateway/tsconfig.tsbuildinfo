@@ -330,7 +330,7 @@
         "signature": "44d63fedd59b1c1a0959f7551896b2c31ead3e091952bbaf59606f3722a6de80"
       },
       "./src/server.ts": {
-        "version": "a0fa3aec25c73359bf23a064f786064918aa388493e5f91cee68136256a8abed",
+        "version": "fa0e9fbb6e0e4273d36b9e80f3c407b1281ac7f01743df823130bcedf52a40cb",
         "signature": "b29d9a5e3b5a4d3a9a933e8a9f615991396597bf7410c2e200c0f4ffc7b27fe4"
       },
       "./src/index.ts": {
@@ -352,7 +352,6 @@
       "composite": true,
       "rootDir": "./src",
       "outDir": "./dist",
-      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
